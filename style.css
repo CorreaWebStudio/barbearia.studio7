@@ -63,7 +63,8 @@ input,select{width:100%;padding:10px;font:inherit;background:var(--bg);color:var
 
 @media (prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
 
-.dev{text-align:center;}
+.foot-inner{display:inline-block;text-align:left;}
+.dev{text-align:left;margin-top:4px;}
 
 .hero h1.logo{
   display:inline-flex;
