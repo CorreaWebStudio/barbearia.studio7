@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Barbearia Studio7</title>
+<link rel="icon" type="image/png" href="BS7.png">
+<link href="https://fonts.googleapis.com/css2?family=Bevan&family=Rye&family=Lora:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="pole" aria-hidden="true"></div>
+<header class="hero">
+  <div class="wrap">
+    <p class="est">Desde 2022, navalha afiada e boa conversa</p>
+<h1 class="logo" aria-label="Barbearia Studio 7">
+  <span class="logo-txt" aria-hidden="true">
+    <span class="l1">Barbearia</span>
+    <span class="l2">Studio</span>
+  </span>
+  <svg class="logo-7" viewBox="0 0 70 112" aria-hidden="true">
+    <rect x="3" y="6" width="54" height="14" rx="3"/>
+    <rect x="-7" y="0" width="14" height="100" rx="7" transform="translate(52 10) rotate(18)"/>
+    <circle cx="52" cy="15" r="2.2"/>
+    <circle cx="24" cy="95" r="2.2"/>
+  </svg>
+</h1>
+    <br>
+    <button class="btn" id="abrir">Agendar horário</button>
+  </div>
+</header>
+<div class="pole" aria-hidden="true"></div>
+
+<main>
+<section id="servicos">
+  <div class="wrap">
+    <h2>Serviços e preços</h2>
+    <p class="lead">Todo serviço inclui finalização com pomada.</p>
+    <div class="menu" id="menu"></div>
+  </div>
+</section>
+
+<section class="alt" id="equipe">
+  <div class="wrap">
+    <h2>Quem cuida de você</h2>
+    <p class="lead">Mestres da tesoura e da navalha.</p>
+    <div class="team">
+      <div class="barber">
+<div class="frame"><img src="img/luizinho.jpeg" alt="Luizinho, barbeiro"></div>
+  <h3>Luizinho</h3>
+  <p>Degradê e barba, <br>Corte clássico e tesoura</p>
+</div>
+<div class="barber">
+  <div class="frame"><img src="img/ryan.jpeg" alt="Ryan, barbeiro"></div>
+  <h3>Ryan</h3>
+  <p>Degradê e barba, <br>Corte clássico e tesoura</p>
+</div>
+    </div>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="wrap info">
+    <div class="hours">
+      <h3>Horário</h3>
+      <div><span>Segunda a sexta</span><span>8h às 12h - 13h às 20h</span></div>
+      <div><span>Sábado</span><span>7h30 às 12h - 13h às 20h</span></div>
+      <div><span>Domingo</span><span>Fechado</span></div>
+    </div>
+    <div>
+      <h3>Onde estamos</h3>
+      <p>Av. Brasil, 3220 - Em frente ao Meu Pet - Sala03<br>Itaipu, Medianeira - PR</p>
+      <div class="map"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d496.4653780616165!2d-54.104489436963995!3d-25.297762904460132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94f6ada557c7b123%3A0xd1ed3e471af9370c!2sBarbearia%20Studio7!5e0!3m2!1spt-BR!2sbr!4v1791602030205!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe></div>
+    </div>
+  </div>
+</section>
+</main>
+
+<div class="pole" aria-hidden="true"></div>
+<footer>
+  <div class="wrap">Barbearia Studio7 &middot; <a href="https://instagram.com/barbearia_studio7" target="_blank" rel="noopener">Instagram</a> &middot; <a id="zapLink" href="https://wa.me/5545999675992" target="_blank" rel="noopener">WhatsApp</a></div>
+  <div class="dev">© 2026 &middot; Produzido por : <a href="https://wa.me/5551989264802" target="_blank" rel="noopener">{cWs}</a></div>
+</footer>
+
+<a class="fab" id="fab" href="https://wa.me/5545999675992" target="_blank" rel="noopener" aria-label="Chamar no WhatsApp">WhatsApp</a>
+
+<dialog id="modal">
+  <h2>Agendar horário</h2>
+  <form method="dialog" id="form" novalidate>
+    <label for="nome">Seu nome</label>
+    <input id="nome" autocomplete="name" required>
+    <label for="serv">Serviço</label>
+    <select id="serv"></select>
+    <label for="data">Data</label>
+    <input id="data" type="date" required>
+    <p class="obs"><strong>Horário:</strong> combinar com o barbeiro</p>
+    <p class="err" id="err" role="alert"></p>
+    <div class="row">
+      <button type="button" class="btn ghost" id="fechar">Cancelar</button>
+      <button type="submit" class="btn">Enviar pelo WhatsApp</button>
+    </div>
+  </form>
+</dialog>
+
+<script src="script.js"></script>
+</body>
+</html>
